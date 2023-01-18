@@ -13,6 +13,7 @@ module.exports = {
       secondary: '#115e59',
       tertiary: '#0f766e',
       inferior: '#0d9488',
+      black: '#1a1a1a',
 
     },
     extend: {},

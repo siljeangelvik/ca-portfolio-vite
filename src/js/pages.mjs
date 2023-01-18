@@ -28,7 +28,13 @@ document.getElementById('about-btn').addEventListener('click', () => {
     sections[3].style.display = 'none';
 
     document.body.style.transition = 'all 1s ease-out';
-    document.body.style.background = '#115e59';
+    document.body.style.background = '#1a1a1a';
+    document.body.style.backgroundImage = "url('../../public/assets/bw-code-wp.png')";
+    document.body.style.backgroundPosition = "center center";
+    document.body.style.backgroundRepeat = 'no-repeat';
+    document.body.style.backgroundSize = "cover";
+
+
     sections[1].style.display = 'block';
 });
 

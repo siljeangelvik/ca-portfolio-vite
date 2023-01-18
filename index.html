@@ -17,8 +17,8 @@
         <!-- Nav Logos -->
         <div>
             <a href="/">
-                <img class="block h-8 w-auto lg:hidden" src="/assets/ff.svg" alt="Logo">
-                <img class="hidden h-8 w-auto lg:block" src="/assets/ff.svg" alt="Logo">
+                <img class="block h-8 w-auto lg:hidden" src="/assets/icons/ff.svg" alt="Logo">
+                <img class="hidden h-8 w-auto lg:block" src="/assets/icons/ff.svg" alt="Logo">
             </a>
         </div>
         <!-- Nav Links -->
@@ -36,7 +36,7 @@
 <div class="mx-auto px-10 h-96">
 
     <!-- HOME -->
-    <section id="home" class="h-full mt-10 text-white">
+    <section id="home" class="h-full mt-16 text-white">
         <div class="h-full w-full flex flex-col items-center md:items-start justify-center gap-6">
             <div class="text-3xl font-bold">
                 <h1 class="">Hello World,
@@ -55,55 +55,56 @@
                 <button type="button" class="btn bg-tertiary px-6 py-3 rounded shadow drop-shadow">Contact me</button>
             </div>
         </div>
+
+
+        <div class="popup download-popup hidden mx-auto w-full mt-16 rounded shadow drop-shadow bg-tertiary">
+            <div class="flex flex-col items-center py-12 border-dark">
+                <h1 class="result text-3xl font-bold">test</h1>
+                <p class="text-sm">Thank you for taking your time to read more.</p>
+                <button type="button" class="close-popup btn bg-primary mt-6 px-6 py-3 rounded shadow drop-shadow">No
+                    problem
+                </button>
+
+            </div>
+        </div>
     </section>
 
 
     <!-- ABOUT -->
-    <section id="about" class="h-full mt-10 text-white" style="display:none;">
+    <section id="about" class="h-full mt-16 text-white" style="display:none;">
         <div class="h-full w-full">
-            <div class="flex flex-col items-center md:items-start justify-center gap-6 border-dark">
-                <h2 class="text-3xl font-bold">About</h2>
-                <p class="text-sm">Some things to know about me.</p>
-            </div>
-        </div>
-        <!--
-        <ul role="list" class="divide-y divide-gray-200 rounded-md border border text-white font-bold">
-            <li class="flex items-center justify-between py-3 pl-3 pr-4 text-sm">
-                <div class="flex w-0 flex-1 items-center">
-                    <svg class="h-5 w-5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg"
-                         viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                        <path fill-rule="evenodd"
-                              d="M15.621 4.379a3 3 0 00-4.242 0l-7 7a3 3 0 004.241 4.243h.001l.497-.5a.75.75 0 011.064 1.057l-.498.501-.002.002a4.5 4.5 0 01-6.364-6.364l7-7a4.5 4.5 0 016.368 6.36l-3.455 3.553A2.625 2.625 0 119.52 9.52l3.45-3.451a.75.75 0 111.061 1.06l-3.45 3.451a1.125 1.125 0 001.587 1.595l3.454-3.553a3 3 0 000-4.242z"
-                              clip-rule="evenodd"/>
-                    </svg>
-                    <span class="ml-2 w-0 flex-1 truncate">resume_front_end_developer.pdf</span>
-                </div>
-                <div class="ml-4 flex-shrink-0">
-                    <a href="#" class="font-medium hover:underline hover:underline-offset-2 font-bold">Download</a>
-                </div>
-            </li>
-            <li class="flex items-center justify-between py-3 pl-3 pr-4 text-sm">
-                <div class="flex w-0 flex-1 items-center">
-                    <svg class="h-5 w-5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg"
-                         viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                        <path fill-rule="evenodd"
-                              d="M15.621 4.379a3 3 0 00-4.242 0l-7 7a3 3 0 004.241 4.243h.001l.497-.5a.75.75 0 011.064 1.057l-.498.501-.002.002a4.5 4.5 0 01-6.364-6.364l7-7a4.5 4.5 0 016.368 6.36l-3.455 3.553A2.625 2.625 0 119.52 9.52l3.45-3.451a.75.75 0 111.061 1.06l-3.45 3.451a1.125 1.125 0 001.587 1.595l3.454-3.553a3 3 0 000-4.242z"
-                              clip-rule="evenodd"/>
-                    </svg>
-                    <span class="ml-2 w-0 flex-1 truncate">coverletter_front_end_developer.pdf</span>
-                </div>
-                <div class="ml-4 flex-shrink-0">
-                    <a href="#" class="font-medium hover:underline hover:underline-offset-2 font-bold">Download</a>
-                </div>
-            </li>
-        </ul>
-        -->
 
+            <div class="flex flex-wrap gap-6 md:gap-24">
+
+                <div class="w-full md:w-auto flex flex-col items-center md:items-start justify-center gap-6">
+                    <h2 class="text-3xl font-bold">About</h2>
+                    <p class="text-sm">Some things to know about me.</p>
+                    <img src="/assets/portrait.png" alt="Self portrait of me."
+                         class="rounded-full shadow drop-shadow h-44">
+
+                    <div class="pb-4">
+                        <a href="/assets/files/ca-portfolio-brief.2023.pdf" download="coverletter_pdf"
+                           class="block bg-primary mt-6 px-6 py-3 rounded shadow drop-shadow">Download coverletter</a>
+                        <a href="/assets/files/ca-portfolio-brief.2023.pdf" download="resume_pdf"
+                           class="block bg-primary mt-6 px-6 py-3 rounded shadow drop-shadow">Download resume</a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center md:items-start -mb-6 p-16 rounded shadow-lg drop-shadow bg-black">
+                    <h2 class="text-3xl font-bold"></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, suscipit.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, suscipit.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, suscipit.</p>
+                </div>
+
+            </div>
+
+        </div>
     </section>
 
 
     <!-- PORTFOLIO -->
-    <section id="portfolio" class="h-full mt-10 text-white" style="display:none;">
+    <section id="portfolio" class="h-full mt-16 text-white" style="display:none;">
         <div class="h-full w-full">
             <div class="flex flex-col items-center md:items-start justify-center gap-6">
                 <h2 class="text-3xl font-bold">Portfolio</h2>
@@ -114,7 +115,8 @@
                 <div class="space-y-12 lg:grid lg:grid-cols-4 lg:gap-x-6 lg:space-y-0">
                     <div class="group relative">
                         <div class="relative h-80 w-full overflow-hidden rounded-lg group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1 shadow-lg">
-                            <img src="/assets/gamehub-1.png" alt="Screenshot of GameHub Website Design Project."
+                            <img src="/assets/projects/gamehub-1.png"
+                                 alt="Screenshot of GameHub Website Design Project."
                                  class="h-full w-full object-cover object-center">
                         </div>
                         <h3 class="mt-6 text-sm">
@@ -128,7 +130,8 @@
 
                     <div class="group relative">
                         <div class="relative h-80 w-full overflow-hidden rounded-lg group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1 shadow-lg">
-                            <img src="/assets/sciencemuseum-1.png" alt="Screenshot of Science Museum Website Project."
+                            <img src="/assets/projects/sciencemuseum-1.png"
+                                 alt="Screenshot of Science Museum Website Project."
                                  class="h-full w-full object-cover object-center">
                         </div>
                         <h3 class="mt-6 text-sm">
@@ -142,7 +145,7 @@
 
                     <div class="group relative">
                         <div class="relative h-80 w-full overflow-hidden rounded-lg group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1 shadow-lg">
-                            <img src="/assets/bylan-1.png" alt="Screenshot of ByLan Website Project."
+                            <img src="/assets/projects/bylan-1.png" alt="Screenshot of ByLan Website Project."
                                  class="h-full w-full object-cover object-center">
                         </div>
                         <h3 class="mt-6 text-sm">
@@ -156,7 +159,7 @@
 
                     <div class="group relative">
                         <div class="relative h-80 w-full overflow-hidden rounded-lg group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1 shadow-lg">
-                            <img src="/assets/asta-auction-app.png"
+                            <img src="/assets/projects/asta-auction-app.png"
                                  alt="Screenshot of Auction House Website Project."
                                  class="h-full w-full object-cover object-center">
                         </div>
@@ -184,12 +187,12 @@
                 <!-- github -->
                 <a href="https://github.com/siljeangelvik" title="github" class="">
                     <span class="block text-center py-3 font-bold">GitHub</span>
-                    <img src="/assets/github-mark-white.svg" alt="GitHub Icon with link to my GitHub">
+                    <img src="/assets/icons/github-mark-white.svg" alt="GitHub Icon with link to my GitHub">
                 </a>
                 <!-- linkedin -->
                 <a href="https://www.linkedin.com/in/siljeangelvik/" title="linkedin" class="">
                     <span class="block text-center py-3 font-bold">LinkedIn</span>
-                    <img src="/assets/linkedin-100-white.svg" alt="LinkedIn Icon with link to my LinkedIn">
+                    <img src="/assets/icons/linkedin-100-white.svg" alt="LinkedIn Icon with link to my LinkedIn">
                 </a>
 
             </div>
@@ -198,7 +201,7 @@
 
 
     <!-- CONTACT -->
-    <section id="contact" class="h-full mt-10 text-white" style="display:none;">
+    <section id="contact" class="h-full mt-16 text-white" style="display:none;">
         <div class="h-full w-full">
             <div class="flex flex-col items-center md:items-start justify-center gap-6">
                 <h2 class="text-3xl font-bold">Contact</h2>
@@ -206,26 +209,28 @@
             </div>
 
             <div class="mx-auto max-w-2xl py-10 lg:max-w-none w-full">
-                <form action="#" method="POST" class="bg-primary rounded-lg shadow drop-shadow w-full">
+                <form name="contact" method="POST" data-netlify="true"
+                      class="bg-primary rounded-lg shadow drop-shadow w-full">
                     <div class="overflow-hidden sm:rounded-md">
                         <div class="px-4 py-5 sm:p-6">
                             <div class="grid grid-cols-3 gap-6">
                                 <div class="col-span-6 sm:col-span-3">
-                                    <label for="first-name" class="block text-sm font-medium">Full name</label>
-                                    <input type="text" name="first-name" id="first-name" autocomplete="given-name"
+                                    <label for="name" class="block text-sm font-medium">Full name</label>
+                                    <input type="text" name="name" id="name" autocomplete="given-name"
                                            placeholder="John Doe"
                                            class="mt-1 block w-full rounded-md shadow shadow-inner focus:border-inferior focus:ring-inferior sm:text-sm">
                                 </div>
                                 <div class="col-span-6 sm:col-span-3">
-                                    <label for="email-address" class="block text-sm font-medium">Email address</label>
-                                    <input type="text" name="email-address" id="email-address" autocomplete="email"
+                                    <label for="email" class="block text-sm font-medium">Email address</label>
+                                    <input type="text" name="email" id="email" autocomplete="email"
                                            placeholder="example@domain.com"
                                            class="mt-1 block w-full rounded-md shadow shadow-inner focus:border-inferior focus:ring-inferior sm:text-sm">
                                 </div>
                                 <div class="col-span-6 sm:col-span-3">
                                     <label for="message" class="block text-sm font-medium">Message</label>
                                     <textarea type="text" name="message" id="message" autocomplete="off" rows="10"
-                                              cols="10" placeholder="Hi, this is my message..."
+                                              cols="10"
+                                              placeholder="Hi, this is my message..."
                                               class="mt-1 block w-full rounded-md shadow shadow-inner focus:border-inferior focus:ring-inferior sm:text-sm"></textarea>
                                 </div>
                             </div>
