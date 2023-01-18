@@ -1,0 +1,34 @@
+{
+  "name": "ca-portfolio-vite",
+  "version": "1.0.0",
+  "description": "Course Assignment: Industry Knowledge - Portfolio",
+  "main": "main.mjs",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siljeangelvik/ca-portfolio-vite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/siljeangelvik/ca-portfolio-vite/issues"
+  },
+  "homepage": "https://github.com/siljeangelvik/ca-portfolio-vite#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.4",
+    "vite": "^4.0.4"
+  },
+  "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.3"
+  }
+}
