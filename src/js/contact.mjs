@@ -15,20 +15,21 @@ const handleSubmit = (event) => {
     })
         .then(() => {
             console.log('Successfully submitted!');
-            clearForm();
-            setTimeout(() => {
-                homePageContent();
-                pageContactPopup.classList.remove('hidden');
-                pageContactPopup.style.display = 'block';
-            }, 350);
-
         })
         .catch((error) => alert(error));
-};
+}
 
 document
     .querySelector('form')
     .addEventListener('submit', handleSubmit);
+
+setTimeout(() => {
+    clearForm();
+    homePageContent();
+    pageContactPopup.classList.remove('hidden');
+    pageContactPopup.style.display = 'block';
+}, 350)
+
 
 // Reset Contact Form on Window Reload / Refresh
 export function clearForm() {
