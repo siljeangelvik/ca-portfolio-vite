@@ -2,8 +2,4 @@
 @tailwind components;
 @tailwind utilities;
 
-
-p {
-    overflow: hidden;
-    max-width: 70ch;
-}
+p { overflow: hidden; max-width: 70ch; }

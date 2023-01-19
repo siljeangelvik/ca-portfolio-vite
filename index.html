@@ -10,8 +10,6 @@
     as well as previous view projects I've made.
     Feel free to contact me!">
     <title>Silje Avena Angelvik</title>
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="/src/css/style.css">
     <!-- Scripts -->
     <script type="module" src="/main.mjs" defer></script>
     <script type="module" src="/src/js/pages.mjs" defer></script>
@@ -39,10 +37,8 @@
     </div>
 </nav>
 
-
 <!-- CONTAINER -->
 <div class="mx-auto px-10 h-96">
-
     <!-- HOME -->
     <section id="home" class="h-full mt-16 text-white">
         <div class="h-full w-full flex flex-col items-center md:items-start justify-center gap-6">
@@ -60,44 +56,37 @@
                 </code>
             </div>
             <div>
-                <button type="button" class="contact-page-btn bg-tertiary px-6 py-3 rounded shadow drop-shadow">Contact me</button>
+                <button type="button" class="contact-page-btn bg-primary text-center font-medium font-mono px-6 py-3 rounded-lg shadow drop-shadow">
+                    Contact me
+                </button>
             </div>
         </div>
     </section>
 
-
     <!-- ABOUT -->
     <section id="about" class="h-full mt-16 text-white" style="display:none;">
         <div class="h-full w-full">
-
             <div class="flex flex-wrap gap-6 md:gap-24">
-
                 <div class="w-full md:w-auto flex flex-col items-center md:items-start justify-center gap-6">
                     <h2 class="text-3xl font-bold">About</h2>
                     <p class="text-sm">Some things to know about me.</p>
-                    <img src="/assets/portrait.png" alt="Self portrait of me."
-                         class="rounded-full shadow drop-shadow h-44">
-
-                    <div class="pb-4">
-                        <a href="/assets/files/ca-portfolio-brief.2023.pdf" download="coverletter_pdf"
-                           class="download-file-btn block bg-primary mt-6 px-6 py-3 rounded shadow drop-shadow">Download coverletter</a>
-                        <a href="/assets/files/ca-portfolio-brief.2023.pdf" download="resume_pdf"
-                           class="download-file-btn block bg-primary mt-6 px-6 py-3 rounded shadow drop-shadow">Download resume</a>
+                    <img src="/assets/portrait.png" alt="Self portrait of me." class="rounded-full shadow drop-shadow h-44">
+                    <div class="flex flex-wrap justify-center justify-between pb-4">
+                        <a href="/assets/files/ca-portfolio-brief.2023.pdf" download="coverletter_pdf" target="_blank" class="download-file-btn w-full text-center font-medium font-mono block mt-6 px-6 py-3 rounded-lg bg-primary shadow-lg drop-shadow">Download
+                            coverletter</a>
+                        <a href="/assets/files/ca-portfolio-brief.2023.pdf" download="resume_pdf" target="_blank" class="download-file-btn w-full text-center font-medium font-mono block mt-6 px-6 py-3 rounded-lg bg-primary shadow-lg drop-shadow">Download
+                            resume</a>
                     </div>
                 </div>
-
-                <div class="flex flex-col items-center md:items-start -mb-6 p-16 rounded shadow-lg drop-shadow bg-black">
+                <div class="flex flex-col items-center md:items-start -mb-6 p-16 rounded-lg bg-primary shadow-lg drop-shadow">
                     <h2 class="text-3xl font-bold"></h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, suscipit.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, suscipit.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, suscipit.</p>
                 </div>
-
             </div>
-
         </div>
     </section>
-
 
     <!-- PORTFOLIO -->
     <section id="portfolio" class="h-full mt-16 text-white" style="display:none;">
@@ -195,7 +184,6 @@
         </div>
     </section>
 
-
     <!-- CONTACT -->
     <section id="contact" class="h-full mt-16 text-white" style="display:none;">
         <div class="h-full w-full">
@@ -203,66 +191,43 @@
                 <h2 class="text-3xl font-bold">Contact</h2>
                 <p class="text-sm">If you have any questions, contact me.</p>
             </div>
-
             <!-- Form Container -->
-            <div class="mx-auto max-w-2xl py-10 lg:max-w-none w-full">
-
+            <div class="mx-auto w-full py-10 lg:max-w-screen-lg">
                 <!-- data-netlify: to receive submissions in Netlify site admin panel -->
-                <form name="contact" method="POST" netlify data-netlify="true" data-netlify-recaptcha="true"
-                      class="bg-primary rounded-lg shadow drop-shadow w-full">
-
-
+                <form name="contact" method="POST" netlify data-netlify="true" data-netlify-recaptcha="true" class="bg-primary rounded-lg shadow drop-shadow w-full">
                     <!-- hidden input: to parse static HTML for the form -->
                     <input type="hidden" name="contact" value="portfolio_contact_form">
-
-                    <div class="overflow-hidden sm:rounded-md">
+                    <div class="overflow-hidden sm:rounded-lg">
                         <div class="px-4 py-5 sm:p-6">
                             <div class="grid grid-cols-3 gap-6">
-
                                 <div class="col-span-6 sm:col-span-3">
                                     <label for="name" class="block text-sm font-medium">Full name</label>
-                                    <input type="text" name="name" id="name" autocomplete="given-name"
-                                           placeholder="John Doe" minlength="2" maxlength="120" required
-                                           class="mt-1 block w-full rounded-md shadow shadow-inner focus:border-inferior focus:ring-inferior sm:text-sm text-secondary">
+                                    <input type="text" name="name" id="name" autocomplete="given-name" placeholder="John Doe" minlength="2" maxlength="120" required class="mt-1 block w-full rounded-lg shadow shadow-inner focus:border-inferior focus:ring-inferior sm:text-sm text-secondary">
                                 </div>
-
                                 <div class="col-span-6 sm:col-span-3">
                                     <label for="email" class="block text-sm font-medium">Email address</label>
-                                    <input type="email" name="email" id="email" autocomplete="email"
-                                           placeholder="example@domain.com" minlength="3" maxlength="31" required
-                                           class="mt-1 block w-full rounded-md shadow shadow-inner focus:border-inferior focus:ring-inferior sm:text-sm text-secondary">
+                                    <input type="email" name="email" id="email" autocomplete="email" placeholder="example@domain.com" minlength="3" maxlength="31" required class="mt-1 block w-full rounded-lg shadow shadow-inner focus:border-inferior focus:ring-inferior sm:text-sm text-secondary">
                                 </div>
-
                                 <div class="col-span-6 sm:col-span-3">
-                                    <label for="tel" class="block text-sm font-medium">Telephone number <span
-                                            class="text-sm">(Optional)</span></label>
-                                    <input type="tel" name="tel" id="tel" placeholder="+00 123 45 678" minlength="8"
-                                           maxlength="16"
-                                           class="mt-1 block w-full rounded-md shadow shadow-inner focus:border-inferior focus:ring-inferior sm:text-sm text-secondary">
+                                    <label for="tel" class="block text-sm font-medium">Telephone number <span class="text-sm">(Optional)</span></label>
+                                    <input type="tel" name="tel" id="tel" placeholder="+00 123 45 678" minlength="8" maxlength="16" class="mt-1 block w-full rounded-lg shadow shadow-inner focus:border-inferior focus:ring-inferior sm:text-sm text-secondary">
                                 </div>
-
                                 <div class="col-span-6 sm:col-span-3">
                                     <label for="title" class="block text-sm font-medium">Subject</label>
-                                    <input type="text" name="title" id="title" placeholder="Subject title" minlength="3"
-                                           maxlength="31"
-                                           class="mt-1 block w-full rounded-md shadow shadow-inner focus:border-inferior focus:ring-inferior sm:text-sm text-secondary">
+                                    <input type="text" name="title" id="title" placeholder="Subject title" minlength="3" maxlength="31" class="mt-1 block w-full rounded-lg shadow shadow-inner focus:border-inferior focus:ring-inferior sm:text-sm text-secondary">
                                 </div>
-
                                 <div class="col-span-6 sm:col-span-3">
                                     <label for="message" class="block text-sm font-medium">Message</label>
-                                    <textarea form="contact" name="message" id="message" autocomplete="off" rows="10"
-                                              cols="20" placeholder="Hi, this is my message..." wrap="hard" required
-                                              class="mt-1 block w-full rounded-md shadow shadow-inner focus:border-inferior focus:ring-inferior sm:text-sm text-secondary"></textarea>
+                                    <textarea form="contact" name="message" id="message" autocomplete="off" rows="10" cols="20" placeholder="Hi, this is my message..." wrap="hard" required class="mt-1 block w-full rounded-lg shadow shadow-inner focus:border-inferior focus:ring-inferior sm:text-sm text-secondary"></textarea>
                                 </div>
                             </div>
                         </div>
 
-                        <div data-netlify-recaptcha="true"></div>
+                            <div data-netlify-recaptcha="true" class="w-full flex justify-center h-14 mx-auto border-none text-white"></div>
 
                         <div class="px-4 py-3 text-right sm:px-6">
-                            <button type="submit"
-                                    class="submitButton inline-flex justify-center rounded-md border border-inferior bg-inferior py-2 px-4 text-sm font-medium shadow-sm hover:bg-primary hover:border-primary hover:text-white focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 shadow drop-shadow">
-                                Send
+                            <button type="submit" class="submitButton bg-tertiary hover:bg-secondary text-center font-medium font-mono px-6 py-3 rounded-lg shadow drop-shadow">
+                                Send message
                             </button>
                         </div>
                     </div>
@@ -273,33 +238,19 @@
     </section>
 </div>
 
-
-<div class="popup download-popup hidden mx-auto w-full mt-16 rounded shadow drop-shadow bg-tertiary">
-    <div class="flex flex-col items-center py-12 border-dark">
-        <h1 class="result text-3xl font-bold">test</h1>
-        <p class="text-sm">Thank you for taking your time to read more.</p>
-        <button type="button" class="close-popup btn bg-primary mt-6 px-6 py-3 rounded shadow drop-shadow">No
-            problem
-        </button>
-
-    </div>
-</div>
-
-
 <!-- Successful Download Popup -->
 <div class="popup download-popup hidden text-white absolute top-28 left-0 right-0 z-10">
     <div class="flex justify-center">
-        <div class="flex flex-col items-center justify-center p-12 xs:px-4 sm:px-6 rounded shadow drop-shadow bg-tertiary">
+        <div class="flex flex-col items-center justify-center p-12 xs:px-4 sm:px-6 rounded-lg shadow drop-shadow bg-primary">
             <h1 class="result text-3xl font-bold mb-3">Download successful!</h1>
             <p class="text-sm text-center">Your download was <strong>successful!</strong></p>
             <p class="text-sm text-center">Thank you for taking your time to read more about me.</p>
             <p class="text-sm mb-1 text-center">Feel free to contact me at any time!</p>
-
             <div class="w-full flex flex-nowrap justify-between gap-6">
-                <button type="button" class="close-popup-btn close-contact-popup-btn btn bg-primary mt-6 px-6 py-2 rounded shadow drop-shadow font-bold">
+                <button type="button" class="close-popup-btn close-download-popup-btn bg-tertiary mt-6 px-6 py-2 rounded-lg shadow drop-shadow font-bold">
                     No problem
                 </button>
-                <button type="button" class="flex-grow contact-page-btn btn bg-secondary mt-6 px-6 py-2 rounded shadow drop-shadow font-bold">
+                <button type="button" class="flex-grow contact-page-btn bg-secondary mt-6 px-6 py-2 rounded-lg shadow drop-shadow font-bold">
                     Contact
                 </button>
             </div>
@@ -307,21 +258,19 @@
     </div>
 </div>
 
-
 <!-- Successful Submit Message Popup -->
 <div class="popup contact-popup hidden text-white absolute top-28 left-0 right-0 z-10">
     <div class="flex justify-center">
-        <div class="flex flex-col items-center justify-center p-12 xs:px-4 sm:px-6 rounded shadow drop-shadow bg-tertiary">
+        <div class="flex flex-col items-center justify-center p-12 xs:px-4 sm:px-6 rounded-lg shadow drop-shadow bg-primary">
             <h1 class="result text-3xl font-bold mb-3">Submit successful!</h1>
             <p class="text-sm text-center">Your message has been delivered, <span class="block sm:inline">and I will reply as soon as possible.</span></p>
             <p class="text-sm mb-1 text-center">Thank you for taking time to message me, <span class="block sm:inline">it is very much appreciated!</span></p>
-            <button type="button" class="close-popup-btn close-contact-popup-btn btn bg-primary mt-6 px-6 py-2 rounded shadow drop-shadow font-bold">
+            <button type="button" class="close-popup-btn close-contact-popup-btn bg-tertiary mt-6 px-6 py-2 rounded-lg shadow drop-shadow font-bold">
                 No problem
             </button>
         </div>
     </div>
 </div>
-
 
 </body>
 </html>

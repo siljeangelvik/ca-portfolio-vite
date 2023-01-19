@@ -22,3 +22,5 @@ Preview project
 
 ---
 
+* close popup modals if clicked outside the modal-popup-container
+* prevent changing browser tab on file-download

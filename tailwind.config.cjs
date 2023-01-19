@@ -7,13 +7,18 @@ module.exports = {
   ],
   theme: {
     colors: {
-      white: '#fafafa',
+      silver: '#c5c6d0',
+      white: '#f0f8ff',
       dark: '#1e293b',
-      primary: '#134e4a',
-      secondary: '#115e59',
-      tertiary: '#0f766e',
-      inferior: '#0d9488',
-      black: '#1a1a1a',
+      primary: '#222222',
+      secondary: '#1f1f1f',
+      tertiary: '#171717',
+      inferior: '#121212',
+
+      greenPrimary: '#134e4a',
+      greenSecondary: '#115e59',
+      greenTertiary: '#0f766e',
+      greenInferior: '#0d9488',
 
     },
     extend: {},

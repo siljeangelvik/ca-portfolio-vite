@@ -1,33 +1,27 @@
 import './main.css'
-
-console.log("HELLO");
-
-
+import './src/css/style.css'
 
 /* reset contact form on window reload/refresh */
 import {clearForm} from "./src/js/contact.mjs";
 clearForm();
 
-
+/* Importing the sections "pages" */
 import {homePageContent,aboutPageContent,portfolioPageContent,contactPageContent} from "./src/js/pages.mjs";
 
 /* POPUP MODALS */
-/* all buttons with class "download-file-btn" will display modal */
+// All Download Buttons with class "download-file-btn" > Open success modal
 [...document.querySelectorAll('.download-file-btn')].forEach(function(download) {
     download.addEventListener('click', function() {
         document.querySelector('.download-popup').style.display = 'block';
     });
 });
 
-/* buttons with class: close-popup-btn,
-will close modal with class: download-popup */
-[...document.querySelectorAll('.close-popup-btn')].forEach(function(download) {
-    download.addEventListener('click', function() {
-        document.querySelector('.download-popup').style.display = 'none';
+// All Modal Buttons with class "close-popup-btn" > CLOSE all popup modals with class "popup"
+[...document.querySelectorAll('.close-popup-btn')].forEach(function(close) {
+    close.addEventListener('click', function() {
+        document.querySelector('.popup').style.display = 'none';
     });
 });
-
-
 
 /* all buttons with class "home-page-button" will run function homePageContent */
 [...document.querySelectorAll('.home-page-btn')].forEach(function(home) {
