@@ -20,7 +20,7 @@ const handleSubmit = (event) => {
                 homePageContent();
                 pageContactPopup.classList.remove('hidden');
                 pageContactPopup.style.display = 'block';
-            }, 900);
+            }, 350);
 
         })
         .catch((error) => alert(error));
