@@ -7,8 +7,3 @@
 .rc-anchor-logo-text,
 .rc-anchor-pt,
 .rc-anchor-pt > a { color: white; background-color: transparent; }
-
-form > input[name],
-form > input[value],
-form > textarea[name],
-form > textarea[value] { font-weight: bold; }
