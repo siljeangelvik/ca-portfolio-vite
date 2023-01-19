@@ -1,8 +1,8 @@
 .rc-anchor {
-  /*color: white;/**/
-  /*margin: auto;/**/
-  /*border: none;/**/
+  margin: auto;
+  border: none;
 }
 
+.rc-anchor,
 .rc-anchor-logo-text,
-.rc-anchor-pt > a { /*color: white;/**/ }
+.rc-anchor-pt > a { color: white; background-color: transparent; }
