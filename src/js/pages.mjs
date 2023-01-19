@@ -11,7 +11,7 @@ export const sections = [
 
 document.body.style.background = '#134e4a';
 
-document.getElementById('home-btn').addEventListener('click', () => {
+export const homePageContent = () => {
     sections[1].style.display = 'none';
     sections[2].style.display = 'none';
     sections[3].style.display = 'none';
@@ -20,9 +20,9 @@ document.getElementById('home-btn').addEventListener('click', () => {
     document.body.classList.remove('bg-primary');
     document.body.style.background = '#134e4a';
     sections[0].style.display = 'block';
-});
+}
 
-document.getElementById('about-btn').addEventListener('click', () => {
+export const aboutPageContent = () => {
     sections[0].style.display = 'none';
     sections[2].style.display = 'none';
     sections[3].style.display = 'none';
@@ -36,9 +36,9 @@ document.getElementById('about-btn').addEventListener('click', () => {
 
 
     sections[1].style.display = 'block';
-});
+}
 
-document.getElementById('portfolio-btn').addEventListener('click', () => {
+export const portfolioPageContent = () => {
     sections[0].style.display = 'none';
     sections[1].style.display = 'none';
     sections[3].style.display = 'none';
@@ -46,12 +46,10 @@ document.getElementById('portfolio-btn').addEventListener('click', () => {
     document.body.style.transition = 'all 1s ease-out';
     document.body.style.background = '#0f766e';
     sections[2].style.display = 'block';
-});
+}
 
 
-
-
-document.getElementById('contact-btn').addEventListener('click', () => {
+export const contactPageContent = () => {
     sections[0].style.display = 'none';
     sections[1].style.display = 'none';
     sections[2].style.display = 'none';
@@ -59,7 +57,8 @@ document.getElementById('contact-btn').addEventListener('click', () => {
     document.body.style.transition = 'all 1s ease-out';
     document.body.style.background = '#115e59';
     sections[3].style.display = 'block';
-});
+}
+
 
 /*
 const menuButtons = document.querySelectorAll('button[type=button]');

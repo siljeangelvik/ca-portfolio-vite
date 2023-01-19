@@ -24,17 +24,17 @@
     <div class="flex justify-between gap-4 md:gap-12 lg:gap-24 w-full">
         <!-- Nav Logos -->
         <div>
-            <a href="/">
+            <a href="/" class="home-page-btn">
                 <img class="block h-8 w-auto lg:hidden" src="/assets/icons/ff.svg" alt="Logo">
                 <img class="hidden h-8 w-auto lg:block" src="/assets/icons/ff.svg" alt="Logo">
             </a>
         </div>
         <!-- Nav Links -->
         <div class="w-full flex justify-between">
-            <a id="home-btn" class="cursor-pointer">Home</a>
-            <a id="about-btn" class="cursor-pointer">About</a>
-            <a id="portfolio-btn" class="cursor-pointer">Portfolio</a>
-            <a id="contact-btn" class="cursor-pointer">Contact</a>
+            <a id="home-page-btn" class="home-page-btn cursor-pointer">Home</a>
+            <a id="about-page-btn" class="about-page-btn cursor-pointer">About</a>
+            <a id="portfolio-page-btn" class="portfolio-page-btn cursor-pointer">Portfolio</a>
+            <a id="contact-page-btn" class="contact-page-btn cursor-pointer">Contact</a>
         </div>
     </div>
 </nav>
@@ -60,19 +60,7 @@
                 </code>
             </div>
             <div>
-                <button type="button" class="cta-contact-btn bg-tertiary px-6 py-3 rounded shadow drop-shadow">Contact me</button>
-            </div>
-        </div>
-
-
-        <div class="popup download-popup hidden mx-auto w-full mt-16 rounded shadow drop-shadow bg-tertiary">
-            <div class="flex flex-col items-center py-12 border-dark">
-                <h1 class="result text-3xl font-bold">test</h1>
-                <p class="text-sm">Thank you for taking your time to read more.</p>
-                <button type="button" class="close-popup btn bg-primary mt-6 px-6 py-3 rounded shadow drop-shadow">No
-                    problem
-                </button>
-
+                <button type="button" class="contact-page-btn bg-tertiary px-6 py-3 rounded shadow drop-shadow">Contact me</button>
             </div>
         </div>
     </section>
@@ -92,9 +80,9 @@
 
                     <div class="pb-4">
                         <a href="/assets/files/ca-portfolio-brief.2023.pdf" download="coverletter_pdf"
-                           class="block bg-primary mt-6 px-6 py-3 rounded shadow drop-shadow">Download coverletter</a>
+                           class="download-file-btn block bg-primary mt-6 px-6 py-3 rounded shadow drop-shadow">Download coverletter</a>
                         <a href="/assets/files/ca-portfolio-brief.2023.pdf" download="resume_pdf"
-                           class="block bg-primary mt-6 px-6 py-3 rounded shadow drop-shadow">Download resume</a>
+                           class="download-file-btn block bg-primary mt-6 px-6 py-3 rounded shadow drop-shadow">Download resume</a>
                     </div>
                 </div>
 
@@ -286,7 +274,42 @@
 </div>
 
 
-<div class="popup contact-popup hidden text-white absolute -mt-60 left-0 right-0 z-10">
+<div class="popup download-popup hidden mx-auto w-full mt-16 rounded shadow drop-shadow bg-tertiary">
+    <div class="flex flex-col items-center py-12 border-dark">
+        <h1 class="result text-3xl font-bold">test</h1>
+        <p class="text-sm">Thank you for taking your time to read more.</p>
+        <button type="button" class="close-popup btn bg-primary mt-6 px-6 py-3 rounded shadow drop-shadow">No
+            problem
+        </button>
+
+    </div>
+</div>
+
+
+<!-- Successful Download Popup -->
+<div class="popup download-popup hidden text-white absolute top-28 left-0 right-0 z-10">
+    <div class="flex justify-center">
+        <div class="flex flex-col items-center justify-center p-12 xs:px-4 sm:px-6 rounded shadow drop-shadow bg-tertiary">
+            <h1 class="result text-3xl font-bold mb-3">Download successful!</h1>
+            <p class="text-sm text-center">Your download was <strong>successful!</strong></p>
+            <p class="text-sm text-center">Thank you for taking your time to read more about me.</p>
+            <p class="text-sm mb-1 text-center">Feel free to contact me at any time!</p>
+
+            <div class="w-full flex flex-nowrap justify-between gap-6">
+                <button type="button" class="close-popup-btn close-contact-popup-btn btn bg-primary mt-6 px-6 py-2 rounded shadow drop-shadow font-bold">
+                    No problem
+                </button>
+                <button type="button" class="flex-grow contact-page-btn btn bg-secondary mt-6 px-6 py-2 rounded shadow drop-shadow font-bold">
+                    Contact
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Successful Submit Message Popup -->
+<div class="popup contact-popup hidden text-white absolute top-28 left-0 right-0 z-10">
     <div class="flex justify-center">
         <div class="flex flex-col items-center justify-center p-12 xs:px-4 sm:px-6 rounded shadow drop-shadow bg-tertiary">
             <h1 class="result text-3xl font-bold mb-3">Submit successful!</h1>

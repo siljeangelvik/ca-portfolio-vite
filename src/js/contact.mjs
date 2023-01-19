@@ -1,4 +1,4 @@
-let contactPopup = document.querySelector('.contact-popup');
+export const pageContactPopup = document.querySelector('.contact-popup');
 
 
 /* submit handler for form */
@@ -15,7 +15,7 @@ const handleSubmit = (event) => {
     }).then(() => {
         console.log("clicked submit");
 
-        contactPopup.style.display = 'block';
+        pageContactPopup.style.display = 'block';
        clearForm();
 
     })
