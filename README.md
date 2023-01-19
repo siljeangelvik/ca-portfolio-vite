@@ -30,10 +30,10 @@ Preview project
 ### Tailwind / Design
 * Fix form width on mobile devices
 * Change colors & background images to match accessibility requirements
-* Make menu links font bold
+* ~~Make menu links font bold~~
 * Make figma wireframes and prototype
 * Download 2nd SVG from Figma file
-* New menu for improving UI / UE
+* ~~New menu for improving UI / UE~~
 
 ### Content
 * Write CV and add to the about page download option

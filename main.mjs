@@ -1,6 +1,8 @@
 import './main.css'
 import './src/css/style.css'
+import 'flowbite'
 
+/* @formatter:off */
 // Calling Function to Reset Contact Form Window Reload / Refresh
 import {clearForm} from "./src/js/contact.mjs";
 clearForm();

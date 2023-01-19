@@ -13,14 +13,14 @@ const handleSubmit = (event) => {
         headers: {"Content-Type": "application/x-www-form-urlencoded"},
         body: new URLSearchParams(formData).toString(),
     }).then(() => {
-            console.log('Successfully submitted!');
-            setTimeout(() => {
-                clearForm();
-                homePageContent();
-                pageContactPopup.classList.remove('hidden');
-                pageContactPopup.style.display = 'block';
-            }, 350);
-        }).catch((error) => alert(error));
+        console.log('Successfully submitted!');
+        setTimeout(() => {
+            clearForm();
+            homePageContent();
+            pageContactPopup.classList.remove('hidden');
+            pageContactPopup.style.display = 'block';
+        }, 350);
+    }).catch((error) => alert(error));
 }
 
 document
@@ -35,18 +35,3 @@ export function clearForm() {
     }
     document.querySelector('#message').value = '';
 }
-
-
-// Close Successfully Submitted Contact Popup
-/*
-let popups = document.querySelectorAll('.popup');
-let closePopupButtons = document.querySelectorAll('.close-popup-btn');
-for (let i = 0; i < closePopupButtons.length; i++) {
-    closePopupButtons[i].addEventListener('click', () => {
-        for (let j = 0; j < popups.length; j++) {
-            popups[j].style.display = 'none';
-        }
-    })
-}
-
- */
