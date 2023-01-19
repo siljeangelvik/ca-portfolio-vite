@@ -12,26 +12,20 @@ const handleSubmit = (event) => {
         method: 'POST',
         headers: {"Content-Type": "application/x-www-form-urlencoded"},
         body: new URLSearchParams(formData).toString(),
-    })
-        .then(() => {
+    }).then(() => {
             console.log('Successfully submitted!');
-
             setTimeout(() => {
                 clearForm();
                 homePageContent();
                 pageContactPopup.classList.remove('hidden');
                 pageContactPopup.style.display = 'block';
             }, 350);
-        })
-        .catch((error) => alert(error));
+        }).catch((error) => alert(error));
 }
 
 document
     .querySelector('form')
     .addEventListener('submit', handleSubmit);
-
-
-
 
 // Reset Contact Form on Window Reload / Refresh
 export function clearForm() {
