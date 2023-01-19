@@ -41,6 +41,10 @@ Preview project
 * Add accessibility attributes to images, links etc..
 * Add meta tags and tab icon for better SEO
 
+### E2E / Unit-Testing
+* Add yaml files for testing the project repo (?)
+* If testing is made, add status badges to the README.md
+
 ### Misc
 * Update LinkedIn Profile
 * Clean up GitHub Repo
