@@ -9,10 +9,10 @@ export const sections = [
     document.getElementById('contact')
 ];
 
-/* DEFAULT ( /HOME ) */
+// DEFAULT ( /HOME )
 document.body.style.background = '#134e4a';
 
-/* HOME */
+// HOME
 export const homePageContent = () => {
     sections[1].style.display = 'none';
     sections[2].style.display = 'none';
@@ -24,7 +24,7 @@ export const homePageContent = () => {
     document.body.style.background = '#134e4a';
 }
 
-/* ABOUT */
+// ABOUT
 export const aboutPageContent = () => {
     sections[0].style.display = 'none';
     sections[2].style.display = 'none';
@@ -40,7 +40,7 @@ export const aboutPageContent = () => {
     document.body.style.backgroundSize = "cover";
 }
 
-/* PORTFOLIO */
+// PORTFOLIO
 export const portfolioPageContent = () => {
     sections[0].style.display = 'none';
     sections[1].style.display = 'none';
@@ -52,7 +52,7 @@ export const portfolioPageContent = () => {
     document.body.style.background = '#0f766e';
 }
 
-/* CONTACT */
+// CONTACT
 export const contactPageContent = () => {
     sections[0].style.display = 'none';
     sections[1].style.display = 'none';

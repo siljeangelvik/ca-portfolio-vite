@@ -194,7 +194,7 @@
             <!-- Form Container -->
             <div class="mx-auto w-full py-10 lg:max-w-screen-lg">
                 <!-- data-netlify: to receive submissions in Netlify site admin panel -->
-                <form name="contact" method="POST" netlify data-netlify="true" data-netlify-recaptcha="true" class="bg-primary rounded-lg shadow drop-shadow w-full">
+                <form name="contact" method="POST" data-netlify="true" class="bg-primary rounded-lg shadow drop-shadow w-full">
                     <!-- hidden input: to parse static HTML for the form -->
                     <input type="hidden" name="contact" value="portfolio_contact_form">
                     <div class="overflow-hidden sm:rounded-lg">
@@ -248,10 +248,10 @@
             <p class="text-sm mb-1 text-center">Feel free to contact me at any time!</p>
             <div class="w-full flex flex-nowrap justify-between gap-6">
                 <button type="button" class="close-popup-btn close-download-popup-btn bg-tertiary mt-6 px-6 py-2 rounded-lg shadow drop-shadow font-bold">
-                    No problem
+                    Close
                 </button>
-                <button type="button" class="flex-grow contact-page-btn bg-secondary mt-6 px-6 py-2 rounded-lg shadow drop-shadow font-bold">
-                    Contact
+                <button type="button" class="close-popup-btn contact-page-btn flex-grow bg-secondary mt-6 px-6 py-2 rounded-lg shadow drop-shadow font-bold">
+                    Contact me
                 </button>
             </div>
         </div>

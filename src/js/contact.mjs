@@ -1,45 +1,46 @@
-import {homePageContent} from "./pages.mjs";
+import {homePageContent} from './pages.mjs';
 
+// Submit Handler for Contact Form
 let pageContactPopup = document.querySelector('.contact-popup');
-
-/* submit handler for form */
 const handleSubmit = (event) => {
     event.preventDefault();
 
     const myForm = event.target;
     const formData = new FormData(myForm);
 
-    fetch("/", {
-        method: "POST",
+    fetch('/', {
+        method: 'POST',
         headers: {"Content-Type": "application/x-www-form-urlencoded"},
         body: new URLSearchParams(formData).toString(),
     })
         .then(() => {
-            console.log("Successfully submitted!");
+            console.log('Successfully submitted!');
             clearForm();
             setTimeout(() => {
                 homePageContent();
                 pageContactPopup.classList.remove('hidden');
                 pageContactPopup.style.display = 'block';
-            }, 1000);
+            }, 900);
+
         })
         .catch((error) => alert(error));
 };
 
 document
-    .querySelector("form")
-    .addEventListener("submit", handleSubmit);
+    .querySelector('form')
+    .addEventListener('submit', handleSubmit);
 
-/* Reset Contact Form on window reload/refresh */
+// Reset Contact Form on Window Reload / Refresh
 export function clearForm() {
     for (let i = 0; i < document.forms.length; i++) {
         document.forms[i].reset();
-        //console.log(document.forms[i])
+        // console.log(document.forms[i])
     }
     document.querySelector('#message').value = '';
 }
 
-/* close contact popup */
+
+// Close Successfully Submitted Contact Popup
 /*
 let popups = document.querySelectorAll('.popup');
 let closePopupButtons = document.querySelectorAll('.close-popup-btn');
