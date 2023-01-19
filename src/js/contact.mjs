@@ -1,3 +1,4 @@
+/**/
 const handleSubmit = (event) => {
     event.preventDefault();
 
@@ -18,3 +19,9 @@ document
     .addEventListener("submit", handleSubmit);
 
 
+/* reset contact form on window reload/refresh */
+export function clearForm() {
+    for (let i = 0; i < document.forms.length; i++) {
+        document.forms[i].reset();
+    }
+}

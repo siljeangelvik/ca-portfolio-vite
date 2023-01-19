@@ -7,6 +7,12 @@ const downloads = [coverletter, resume];
 downloads.addEventListener("submit", (event) => {
     event.preventDefault();
     const result = document.querySelector(".result");
+    if (onerror(downloads)) {
+        result.innerText = `Failed: ${onmessage}`;
+    } else {
+        result.innerText = `Success`;
+    }
+    /*
     fetch("/", {
         body: new FormData(event.target),
         method: "POST",
@@ -17,6 +23,7 @@ downloads.addEventListener("submit", (event) => {
         .catch((error) => {
             result.innerText = `Failed: ${error}`;
         });
+    */
 });
 
 

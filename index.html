@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Index</title>
     <script type="module" src="/main.mjs" defer></script>
-    <script type="module" src="/src/js/pages.mjs"></script>
+    <script type="module" src="/src/js/pages.mjs" defer></script>
+    <script type="module" src="/src/js/contact.mjs" defer></script>
 </head>
 <body class="bg-light">
 
@@ -208,33 +209,50 @@
                 <p class="text-sm">If you have any questions, contact me.</p>
             </div>
 
+            <!-- Form Container -->
             <div class="mx-auto max-w-2xl py-10 lg:max-w-none w-full">
-                <form name="contact" method="POST" data-netlify="true"
+
+                <!-- data-netlify: to receive submissions in Netlify site admin panel -->
+                <form name="contact" method="POST" netlify data-netlify="true" data-netlify-recaptcha="true"
                       class="bg-primary rounded-lg shadow drop-shadow w-full">
+
+
+                    <!-- hidden input: to parse static HTML for the form -->
+                    <input type="hidden" name="contact" value="portfolio_contact_form">
+
                     <div class="overflow-hidden sm:rounded-md">
                         <div class="px-4 py-5 sm:p-6">
                             <div class="grid grid-cols-3 gap-6">
+
                                 <div class="col-span-6 sm:col-span-3">
                                     <label for="name" class="block text-sm font-medium">Full name</label>
-                                    <input type="text" name="name" id="name" autocomplete="given-name"
-                                           placeholder="John Doe"
-                                           class="mt-1 block w-full rounded-md shadow shadow-inner focus:border-inferior focus:ring-inferior sm:text-sm">
+                                    <input type="text" name="name" id="name" autocomplete="given-name" placeholder="John Doe" minlength="2" maxlength="120" required class="mt-1 block w-full rounded-md shadow shadow-inner focus:border-inferior focus:ring-inferior sm:text-sm text-secondary">
                                 </div>
+
                                 <div class="col-span-6 sm:col-span-3">
                                     <label for="email" class="block text-sm font-medium">Email address</label>
-                                    <input type="text" name="email" id="email" autocomplete="email"
-                                           placeholder="example@domain.com"
-                                           class="mt-1 block w-full rounded-md shadow shadow-inner focus:border-inferior focus:ring-inferior sm:text-sm">
+                                    <input type="email" name="email" id="email" autocomplete="email" placeholder="example@domain.com" minlength="3" maxlength="31" required class="mt-1 block w-full rounded-md shadow shadow-inner focus:border-inferior focus:ring-inferior sm:text-sm text-secondary">
                                 </div>
+
+                                <div class="col-span-6 sm:col-span-3">
+                                    <label for="tel" class="block text-sm font-medium">Telephone number <span class="text-sm">(Optional)</span></label>
+                                    <input type="tel" name="tel" id="tel" placeholder="+00 123 45 678" minlength="8" maxlength="16" class="mt-1 block w-full rounded-md shadow shadow-inner focus:border-inferior focus:ring-inferior sm:text-sm text-secondary">
+                                </div>
+
+                                <div class="col-span-6 sm:col-span-3">
+                                    <label for="title" class="block text-sm font-medium">Subject</label>
+                                    <input type="text" name="title" id="title" placeholder="Subject title" minlength="3" maxlength="31" class="mt-1 block w-full rounded-md shadow shadow-inner focus:border-inferior focus:ring-inferior sm:text-sm text-secondary">
+                                </div>
+
                                 <div class="col-span-6 sm:col-span-3">
                                     <label for="message" class="block text-sm font-medium">Message</label>
-                                    <textarea type="text" name="message" id="message" autocomplete="off" rows="10"
-                                              cols="10"
-                                              placeholder="Hi, this is my message..."
-                                              class="mt-1 block w-full rounded-md shadow shadow-inner focus:border-inferior focus:ring-inferior sm:text-sm"></textarea>
+                                    <textarea form="contact" name="message" id="message" autocomplete="off" rows="10" cols="20" placeholder="Hi, this is my message..." wrap="hard" required class="mt-1 block w-full rounded-md shadow shadow-inner focus:border-inferior focus:ring-inferior sm:text-sm text-secondary"></textarea>
                                 </div>
                             </div>
                         </div>
+
+                        <div data-netlify-recaptcha="true"></div>
+
                         <div class="px-4 py-3 text-right sm:px-6">
                             <button type="submit"
                                     class="inline-flex justify-center rounded-md border border-inferior bg-inferior py-2 px-4 text-sm font-medium shadow-sm hover:bg-primary hover:border-primary hover:text-white focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 shadow drop-shadow">
