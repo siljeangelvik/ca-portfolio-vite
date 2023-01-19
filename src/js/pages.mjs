@@ -2,7 +2,7 @@
  * buttons changes the page content without reloading the browser window
  * @type {HTMLElement[]}
  */
-let sections = [
+export const sections = [
     document.getElementById('home'),
     document.getElementById('about'),
     document.getElementById('portfolio'),
@@ -48,6 +48,9 @@ document.getElementById('portfolio-btn').addEventListener('click', () => {
     sections[2].style.display = 'block';
 });
 
+
+
+
 document.getElementById('contact-btn').addEventListener('click', () => {
     sections[0].style.display = 'none';
     sections[1].style.display = 'none';
@@ -63,3 +66,4 @@ const menuButtons = document.querySelectorAll('button[type=button]');
 menuButtons.style.background = '#134e4a';
 menuButtons.style.border = 'none';
  */
+

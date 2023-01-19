@@ -1,4 +1,7 @@
-/**/
+let contactPopup = document.querySelector('.contact-popup');
+
+
+/* submit handler for form */
 const handleSubmit = (event) => {
     event.preventDefault();
 
@@ -7,10 +10,15 @@ const handleSubmit = (event) => {
 
     fetch("/", {
         method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        headers: {"Content-Type": "application/x-www-form-urlencoded"},
         body: new URLSearchParams(formData).toString(),
+    }).then(() => {
+        console.log("clicked submit");
+
+        contactPopup.style.display = 'block';
+       clearForm();
+
     })
-        .then(() => console.log("Form successfully submitted"))
         .catch((error) => alert(error));
 };
 
@@ -19,9 +27,23 @@ document
     .addEventListener("submit", handleSubmit);
 
 
+/* close contact popup */
+let popups = document.querySelectorAll('.popup');
+let closePopupButtons = document.querySelectorAll('.close-popup-btn');
+for (let i = 0; i < closePopupButtons.length; i++) {
+    closePopupButtons[i].addEventListener('click', () => {
+        for (let j = 0; j < popups.length; j++) {
+            popups[j].style.display = 'none';
+        }
+    })
+}
+
+
 /* reset contact form on window reload/refresh */
 export function clearForm() {
     for (let i = 0; i < document.forms.length; i++) {
-        document.forms[i].reset();
+         document.forms[i].reset();
+        console.log(document.forms[i])
     }
+    document.querySelector('#message').value = '';
 }
