@@ -32,10 +32,10 @@ export const aboutPageContent = () => {
 
     sections[1].style.display = 'block';
 
-    document.body.style.transition = 'all 1s ease-out';
-    document.body.style.background = '#1a1a1a';
-    document.body.style.backgroundImage = "url('./assets/bw-code-wp.png')";
-    document.body.style.backgroundPosition = "center center";
+    document.body.style.transition = 'all 2.4s ease';
+    document.body.style.background = '#134e4a';
+    document.body.style.backgroundImage = "url('./assets/green-bg-wp.jpg')";
+    document.body.style.backgroundPosition = "bottom left";
     document.body.style.backgroundRepeat = 'no-repeat';
     document.body.style.backgroundSize = "cover";
 }
@@ -61,8 +61,8 @@ export const contactPageContent = () => {
     sections[3].style.display = 'block';
 
     document.body.style.transition = 'all 1s ease-out';
-    document.body.style.background = '#115e59';
-    document.body.style.backgroundImage = "url('./assets/matrix-wp_1280.jpg')";
+    document.body.style.background = '#011c15';
+    document.body.style.backgroundImage = "url('./assets/matrix-style-binary-code/25336.jpg')";
     document.body.style.backgroundPosition = "center center";
     document.body.style.backgroundRepeat = 'no-repeat';
     document.body.style.backgroundSize = "cover";

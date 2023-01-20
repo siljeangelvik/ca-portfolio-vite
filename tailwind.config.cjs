@@ -11,10 +11,19 @@ module.exports = {
             silver: '#c5c6d0',
             white: '#f0f8ff',
             dark: '#1e293b',
-            primary: '#222222',
-            secondary: '#1f1f1f',
-            tertiary: '#171717',
-            inferior: '#121212',
+
+            primary: '#011c15',
+            secondary: '#003916',
+            tertiary: '#4eb235',
+            //tertiary: '#65e93d',
+            inferior: '#003916',
+
+
+
+            bPrimary: '#222222',
+            bSecondary: '#1f1f1f',
+            bTertiary: '#171717',
+            bInferior: '#121212',
 
             greenPrimary: '#134e4a',
             greenSecondary: '#115e59',

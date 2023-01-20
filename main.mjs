@@ -52,3 +52,10 @@ import {homePageContent, aboutPageContent, portfolioPageContent, contactPageCont
         contactPageContent();
     });
 });
+
+
+document.getElementById('backToTop').addEventListener('click', () => {
+    console.log("Button to top clicked");
+
+    window.scrollTo(document.top);
+})
