@@ -1,50 +1,99 @@
-# Course Assignment: Portfolio
-### Industry Knowledge 
- 
-**ca-portfolio-vite**
- 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/736e8330-8d8b-4552-ad73-53872f7f6240/deploy-status)](https://app.netlify.com/sites/siljeangelvik/deploys)  
-**Domain:** siljeangelvik.no  
-**Hosted:** [Netlify](https://siljeangelvik.no/)  
-**GitHub:** [Repo](https://github.com/siljeangelvik/ca-portfolio-vite)
+# Industry Knowledge
 
----
+[![Netlify Status](https://api.netlify.com/api/v1/badges/736e8330-8d8b-4552-ad73-53872f7f6240/deploy-status)](https://app.netlify.com/sites/ca-portfolio-vite/deploys)  
 
-## Setup
-Install dependencies  
-`$ npm install`  
-Build project  
-`$ npm run build`  
-Preview project    
-`$ npm run preview`  
+**Student:** [Silje Angelvik](https://github.com/siljeangelvik)  
+**Host:** [Netlify](https://siljeangelvik.netlify.app/)  
+**Repository:** [GitHub](https://github.com/siljeangelvik/ca-portfolio-vite)
 
----
+## Description
 
-## // TODO
-### JavaScript / Functionality
-* Close popup modals if clicked outside the modal-popup-container
-* ~~Prevent changing browser tab on file-download~~
-* ~~Download popup-modal close when "contact"-btn is clicked~~
-* ~~Did not receive email on last try~~
+This is my portfolio project for the course "Industry Knowledge" at Noroff.
 
-### Tailwind / Design
-* Fix form width on mobile devices
-* ~~Change colors & background images to match accessibility requirements~~
-* ~~Make menu links font bold~~
-* Make figma wireframes and prototype
-* Download 2nd SVG from Figma file
-* ~~New menu for improving UI / UE~~
+## Built with
 
-### Content
-* ~~Write CV and add to the about page download option~~
-* ~~Write about myself on the about page~~
-* Add accessibility attributes to images, links etc..
-* Add meta tags and tab icon for better SEO
+* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+* [Vite](https://vitejs.dev/)
+* [Tailwind CSS](https://tailwindcss.com/)
+* [PostCSS](https://postcss.org/)
+* [Netlify](https://www.netlify.com/)
+* [PhpStorm](https://www.jetbrains.com/phpstorm/)
+* [Git](https://training.github.com/downloads/github-git-cheat-sheet/)
 
-### E2E / Unit-Testing
-* Add yaml files for testing the project repo (?)
-* If testing is made, add status badges to the README.md
+## Getting started
 
-### Misc
-* Update LinkedIn Profile
-* Clean up GitHub Repo
+### Installing
+
+1. Clone the repo:
+
+```bash
+git clone git@github.com:siljeangelvik/ca-portfolio-vite.git
+```
+
+2. Install the dependencies:
+
+```
+npm install
+```
+
+### Running
+
+To run and preview the app:
+
+```bash
+npm run dev
+```
+## Contributing
+
+No contributions at this time.
+
+## Contact
+
+Click on the badges below to go to my profiles or contact me via email.
+
+<a href = "https://www.linkedin.com/in/siljeangelvik/">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2.svg?style=for-the-badge&logo=LinkedIn&logoColor=white" alt="LinkedIn Badge" />
+</a>
+<a href = "https://github.com/siljeangelvik">
+    <img src="https://img.shields.io/badge/GitHub-181717.svg?style=for-the-badge&logo=GitHub&logoColor=white" alt="GitHub Badge" />
+</a>
+<a href = "mailto: angelviksilje@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-EA4335.svg?style=for-the-badge&logo=Gmail&logoColor=white" alt="Gmail Badge" />
+</a>
+
+## License
+
+A repository where anyone can use to create a static webpage containing the most up-to-date ISC license.
+
+[ISC License](https://opensource.org/licenses/ISC) from Open Source
+Initiative [ISC License](https://www.isc.org/downloads/software-support-policy/isc-license/) from the Internet Systems
+Consortium [ISC License](http://cvsweb.openbsd.org/cgi-bin/cvsweb/src/share/misc/license.template?rev=HEAD) from OpenBSD
+
+The ISC copyright is functionally equivalent to a two-term BSD copyright with language removed that is made unnecessary
+by the Berne convention. This is the preferred license for new code incorporated into OpenBSD.
+
+--- 
+
+### TODO
+
+JavaScript / Functionality
+: Close popup modals if clicked outside the modal-popup-container
+
+Tailwind / Design 
+: Fix form width on mobile devices
+: Make figma wireframes and prototype
+: Download 2nd SVG from Figma file
+
+Content 
+: Add accessibility attributes to images, links etc..
+: Add meta tags and tab icon for better SEO
+
+E2E / Unit-Testing
+: Add yaml files for testing the project repo (?)
+: If testing is made, add status badges to the README.md
+
+Misc 
+: Update LinkedIn Profile
+: Clean up GitHub Repo
